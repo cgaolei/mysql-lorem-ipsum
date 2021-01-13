@@ -10,8 +10,8 @@ CREATE FUNCTION lipsum(
  p_start_with_lipsum TINYINT(1),
  p_rand_seed BIGINT
 )
-    RETURNS VARCHAR(10000)
-    NO SQL
+RETURNS VARCHAR(10000)
+NO SQL
 BEGIN
     /**
     * %param p_min_words         Number: the minimum amount of words in the
