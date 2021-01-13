@@ -15,7 +15,7 @@ curl https://raw.githubusercontent.com/cgaolei/mysql-lorem-ipsum/main/mysql/lips
 ```
 #### Installation
 ```shell
-mysql -u user -p MY_DATABASE < lipsum.sql
+mysql -u $USER -p $MY_DATABASE < lipsum.sql
 ```
 
 ## Usage & Examples
