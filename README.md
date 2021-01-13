@@ -73,3 +73,21 @@ MySQL [MY_DATABASE]> select lipsum(5,15,false,NULL) as Text;
 1 row in set (0.00 sec)
 
 ```
+
+## Credits
+This function was modified based on a gist found here:
+https://gist.github.com/zackad/461548a4a701ca93ada5e009f57a79d1
+
+This text was extracted from the `fn_str_random_lipsum.sql` file:
+```
+/**
+* ALL CREDIT GOES TO ORIGINAL CREATOR
+* @Ronald Speelman
+* http://moinne.com/blog/ronald/mysql/mysql-lorum-ipsum-generator
+*
+* renamed function for simplicity
+*/
+```
+* The original creator's blog `http://moinne.com/blog/ronald` was no longer available at this time.
+* Function modified to return a "deterministric" text for the same given inputs.
+* Changed the order of function's parameters to have the `p_min_words` as first.
