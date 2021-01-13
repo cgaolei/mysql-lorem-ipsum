@@ -14,6 +14,7 @@ RETURNS VARCHAR(10000)
 NO SQL
 BEGIN
     /**
+    * version: 1.1.0
     * For latest updates and issues:
     *   https://github.com/cgaolei/mysql-lorem-ipsum
     *
