@@ -60,6 +60,8 @@ MySQL [MY_DATABASE]> select lipsum(5,15,false,200) as Text;
 1 row in set (0.00 sec)
 ```
 
+> :warning: **About "Deterministic"**: Be careful if you are using `STATEMENT` based replication. The output text is same for a given set of parameters, but the function is `NOT DETERMINISTIC` due to the RAND() function is used. 
+
 #### Random text
 ```mysql
 MySQL [MY_DATABASE]> select lipsum(5,15,false,NULL) as Text;
