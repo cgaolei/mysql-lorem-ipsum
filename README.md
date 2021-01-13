@@ -1,4 +1,8 @@
-# mysql-lorem-ipsum
+# MySQL Lorem Ipsum Function
+
+## About Lorem Ipsum
+https://en.wikipedia.org/wiki/Lorem_ipsum
+https://www.lipsum.com/
 
 ## Setup
 #### Download
@@ -14,7 +18,12 @@ curl https://raw.githubusercontent.com/cgaolei/mysql-lorem-ipsum/main/mysql/lips
 mysql -u user -p MY_DATABASE < lipsum.sql
 ```
 
-## Examples
+## Usage & Examples
+
+#### Syntax
+```
+lipsum(p_min_words, p_max_words, p_start_with_lipsum, p_rand_seed)
+```
 
 #### "Deterministic"
 ```mysql
@@ -75,7 +84,7 @@ MySQL [MY_DATABASE]> select lipsum(5,15,false,NULL) as Text;
 ```
 
 ## Credits
-This function was modified based on a gist found here:
+This function was modified based on this gist here:
 https://gist.github.com/zackad/461548a4a701ca93ada5e009f57a79d1
 
 This text was extracted from the `fn_str_random_lipsum.sql` file:
@@ -88,6 +97,6 @@ This text was extracted from the `fn_str_random_lipsum.sql` file:
 * renamed function for simplicity
 */
 ```
-* The original creator's blog `http://moinne.com/blog/ronald` was no longer available at this time.
-* Function modified to return a "deterministric" text for the same given inputs.
+* The original creator's blog `http://moinne.com/blog/ronald` was no longer available at the time.
+* Feature added to return a "deterministric" text for the same given inputs.
 * Changed the order of function's parameters to have the `p_min_words` as first.
