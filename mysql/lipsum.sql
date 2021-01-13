@@ -14,19 +14,22 @@ RETURNS VARCHAR(10000)
 NO SQL
 BEGIN
     /**
+    * For latest updates and issues:
+    *   https://github.com/cgaolei/mysql-lorem-ipsum
+    *
     * %param p_min_words         Number: the minimum amount of words in the
     *                                    result, By providing the parameter, you provide a range
     *                                    Default = 0
     *
     * %param p_max_words         Number: the maximum amount of words, if no
     *                                    min_words are provided this will be the
-    *                                    exaxt amount of words in the result
+    *                                    exact amount of words in the result
     *                                    Default = 50
     *
     * %param p_start_with_lipsum Boolean:if "1" the string will start with
     *                                    'Lorum ipsum dolor sit amet.', Default = 0
     *
-    * %param p_rand_seed         Number: a seed for the RAND() function. If the seed value is not NULL,
+    * %param p_rand_seed         Number: a seed for the RAND() function. If the seed value is non-NULL,
     *                                    then the output text is "deterministic" for the same given input parameters.
     *                                    Otherwise, the output text is random
     *                                    Default = NULL
