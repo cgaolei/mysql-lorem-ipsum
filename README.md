@@ -1,11 +1,20 @@
 # mysql-lorem-ipsum
 
-### Setup
+## Setup
+#### Download
+```shell
+wget https://raw.githubusercontent.com/cgaolei/mysql-lorem-ipsum/main/mysql/lipsum.sql
+```
+Or (if `wget` unavailable on the server)
+```shell
+curl https://raw.githubusercontent.com/cgaolei/mysql-lorem-ipsum/main/mysql/lipsum.sql -o lipsum.sql
+```
+#### Installation
 ```shell
 mysql -u user -p MY_DATABASE < lipsum.sql
 ```
 
-### Examples
+## Examples
 
 #### "Deterministic"
 ```mysql
