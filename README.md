@@ -29,8 +29,8 @@ lipsum(p_min_words, p_max_words, p_start_with_lipsum, p_rand_seed)
 | ------------------- | -------- |:-----:| ------------ |
 | p_min_words         | SMALLINT | 0     | The minimum amount of words in the result. By providing this parameter, you provide a range for the result |
 | p_max_words         | SMALLINT | 50    | The maximum amount of words. If no min_words are provided(NULL), this will be the exact amount of words in the result |
-| p_start_with_lipsum | BOOLEAN  | false | If `true` the result string will start with 'Lorum ipsum dolor sit amet.'|
-| p_rand_seed         | BIGINT   | NULL  | Random seed value. By default the output text is random each call. If a Non-NULL seed is given, the output text is "deterministic" for the same given parameters |
+| p_start_with_lipsum | BOOLEAN  | false | If `true` the result string will start with `Lorum ipsum dolor sit amet.`|
+| p_rand_seed         | BIGINT   | NULL  | Random seed value. By default the output text is random each call. If a Non-NULL seed is given, the output text is **deterministic** for the same given parameters |
 
 #### "Deterministic"
 ```mysql
